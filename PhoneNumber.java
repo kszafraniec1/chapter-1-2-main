@@ -11,7 +11,9 @@ public class PhoneNumber
 {
     public static void main(String[] args)
     {
+        
         Random generator = new Random();
+        //Generate numbers for the random phone number
         int first= generator.nextInt(8);
         int first2= generator.nextInt(8);
         int first3= generator.nextInt(8);

@@ -24,3 +24,7 @@ public class PhoneNumber
         System.out.println("The random number is "+first+first2+first3+"-"+med+"-"+last);
     }
 }
+/*
+ * The random number is 762-385-2003
+ * The random number is 552-301-491
+   */

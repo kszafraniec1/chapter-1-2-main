@@ -10,32 +10,33 @@ public class NameProgram
 {
     public static void main(String[] args)
     {
-        String first= new String();
-        String middle= new String();
-        String last= new String();
+        String name= new String();
+        
         Scanner Keyboard = new Scanner(System.in);
-        System.out.println("What is your First name");
-        first=Keyboard.nextLine();
-        System.out.println("What is your Middle name");
-        middle=Keyboard.nextLine();
-        System.out.println("What is your Last name");
-        last=Keyboard.nextLine();
-        System.out.println(first+" "+middle.charAt(0)+" "+last);
+        System.out.println("What is your full name");
+        
+        name=Keyboard.nextLine();
+        int space= name.indexOf(" ");
+        
+        String First=name.substring(0,space);
+        int space2= name.indexOf(" ", space+1);
+        
+        String Midd=name.substring(space,space2);
+        String Mid= Midd.substring(1,2);
+        
+        String Last=name.substring(space2+1);
+        
+        System.out.println(First+" "+Mid+" "+Last);
+         
     }
 }
-/*
- * What is your First name
-Kevin 
-What is your Middle name
-Sza
-What is your Last name
-Szafraniec
-Kevin  S Szafraniec
-What is your First name
-Bob
-What is your Middle name
-Smith
-What is your Last name
-Smith
+/* Output #1
+What is your full name
+Kevin Sza Szafraniec
+Kevin S Szafraniec
+
+Output #2
+What is your full name
+Bob Smith Smith
 Bob S Smith
    */
